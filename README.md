@@ -14,7 +14,7 @@
 <a href="https://instagram.com/encepsuryana_" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="encepsuryana_" height="30" width="40" /></a>
 </p>
 
-<h3 align="left">Performance</h3>
+<h3 align="left">Performance:</h3>
 <p align="left"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=encepsuryana&show_icons=true&locale=en&layout=compact" alt="encepsuryana" /> <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=encepsuryana&" alt="encepsuryana" /> </p>
 
 <h3 align="left">Languages and Tools:</h3>
