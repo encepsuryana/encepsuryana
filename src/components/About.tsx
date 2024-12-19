@@ -26,7 +26,7 @@ const About: React.FC = () => {
       {
         title: "Address",
         description:
-          "Perum Griya Permata 2 Block A No. 8, Gunungmanik - Tanjungsari, Sumedang, West Java, Indonesia",
+          "Perum Griya Permata 2, A-8, Gunungmanik - Tanjungsari, Sumedang, West Java, Indonesia",
       },
       {
         title: "Social",
@@ -332,11 +332,11 @@ const About: React.FC = () => {
                   key={item.title}
                   className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
                 >
-                  <h2 className="text-primary text-lg font-bold mb-2">
+                  <h2 className="text-gray-400 text-md font-bold mb-2">
                     {item.title}:
                   </h2>
                   {item.description ? (
-                    <p className="text-white text-md font-semibold">
+                    <p className="text-primary text-md font-semibold">
                       {item.description}
                     </p>
                   ) : (
@@ -348,14 +348,16 @@ const About: React.FC = () => {
                             href={social.link}
                             target="_blank"
                             rel="noreferrer"
-                            className="flex items-center space-x-2 text-white text-md font-semibold"
+                            className="flex items-center space-x-2 text-white text-sm md:text-md font-semibold flex-col md:flex-row"
                           >
                             <img
                               src={social.icon}
                               alt={social.name}
                               className="w-6 h-6"
                             />
-                            <span>{social.name}</span>
+                            <span className="mt-2 md:mt-0 text-primary">
+                              {social.name}
+                            </span>
                           </a>
                         ))}
                     </div>
@@ -379,21 +381,21 @@ const About: React.FC = () => {
                 </h2>
                 {skill.subcategories.map((subcategory) => (
                   <div key={subcategory.name} className="mb-4">
-                    <h3 className="text-white text-md font-semibold mb-2">
+                    <h3 className="text-gray-400 text-md font-semibold mb-2">
                       {subcategory.name}
                     </h3>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                       {subcategory.items.map((item) => (
                         <div
                           key={item.name}
-                          className="flex items-center space-x-4 bg-gray-800 p-4 rounded-md group hover:bg-primary hover:bg-opacity-10 transition-all cursor-pointer"
+                          className="flex items-center space-x-4 bg-gray-800 p-4 rounded-md group hover:bg-primary hover:bg-opacity-10 transition-all cursor-pointer flex-col md:flex-row text-center md:text-left"
                         >
                           <img
                             src={item.icon}
                             alt={item.name}
                             className="w-10 h-10 group-hover:scale-110 transition-transform"
                           />
-                          <span className="group-hover:text-black transition-colors">
+                          <span className="group-hover:text-black transition-colors text-sm md:text-base !m-0 md:!ml-2 pt-2 md:pt-0">
                             {item.name}
                           </span>
                         </div>

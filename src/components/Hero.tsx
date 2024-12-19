@@ -7,7 +7,7 @@ const Hero: FC = () => {
   return (
     <div className="container mx-auto px-7 md:px-0 my-2 md:my-40">
       <div className="flex flex-col-reverse md:flex-row items-center justify-center md:mt-20">
-        <div className="md:mr-10 mt-8 md:mt-0">
+        <div className="md:mr-10 mt-8 md:mt-0 mb-8 md:mb-0">
           <Image
             src="https://github.com/encepsuryana.png"
             alt="Encep Suryana"
@@ -39,8 +39,9 @@ const Hero: FC = () => {
               Frontend Developer
             </h1>
             <p className="text-white mt-5">
-              I&apos;m a frontend developer based in Indonesia. I specialize in
-              creating high-quality websites and web applications.
+              I&apos;m a frontend developer based in Indonesia with over 4 years
+              of experience. I specialize in creating high-quality websites and
+              web applications.
             </p>
           </div>
         </div>
