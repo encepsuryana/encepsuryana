@@ -5,7 +5,7 @@
 
 - 🌱 I’m currently expert in **Front-End Developer.**
 - 📫 How to reach me **encep.suryanajr@gmail.com**
-- 🌐 My portfolio <a href="encepsuryana.vercel.app">Encep Suryana - Portfolio</a>
+- 🌐 My portfolio <a href="https://encepsuryana.vercel.app" target="_blank">Encep Suryana - Portfolio</a>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
