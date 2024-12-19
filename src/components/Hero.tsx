@@ -5,9 +5,19 @@ import { RiGlobeFill } from "react-icons/ri";
 
 const Hero: FC = () => {
   return (
-    <div className="container h-screen mx-auto">
-      <div className="flex items-center justify-center mt-20">
-        <div className="">
+    <div className="container mx-auto px-7 md:px-0 my-40">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-center md:mt-20">
+        <div className="md:mr-10 mt-8 md:mt-0">
+          <Image
+            src="https://github.com/encepsuryana.png"
+            alt="Encep Suryana"
+            className="w-96 h-full rounded-full bg-primary"
+            width={384}
+            height={384}
+          />
+        </div>
+
+        <div className="mt-10 md:mt-0">
           <div className="text-white">
             <p className="text-primary font-semibold">
               <BsFillBriefcaseFill className="inline-block mr-2 -mt-[0.2px]" />
@@ -34,17 +44,9 @@ const Hero: FC = () => {
             </p>
           </div>
         </div>
-
-        <div className="">
-          <Image
-            src="https://github.com/encepsuryana.png"
-            alt="Encep Suryana"
-            className="w-96 h-full rounded-full bg-primary"
-            width={384}
-            height={384}
-          />
-        </div>
       </div>
+
+      <div className="h-0.5 w-full bg-primary mt-40"></div>
     </div>
   );
 };

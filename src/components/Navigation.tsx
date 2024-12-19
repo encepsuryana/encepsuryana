@@ -16,7 +16,7 @@ const Navigation: FC = () => {
   };
 
   return (
-    <nav className="relative md:sticky top-0 bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg shadow-md z-50 h-full">
+    <nav className="sticky top-0 bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg shadow-md z-50 h-full">
       <div className="container mx-auto flex justify-between items-center p-4">
         <div className="text-2xl font-bold">
           Encep <span className="text-primary">Suryana</span>
