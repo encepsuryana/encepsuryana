@@ -5,7 +5,7 @@ import { RiGlobeFill } from "react-icons/ri";
 
 const Hero: FC = () => {
   return (
-    <div className="container mx-auto px-7 md:px-0 my-40">
+    <div className="container mx-auto px-7 md:px-0 my-2 md:my-40">
       <div className="flex flex-col-reverse md:flex-row items-center justify-center md:mt-20">
         <div className="md:mr-10 mt-8 md:mt-0">
           <Image
@@ -46,7 +46,7 @@ const Hero: FC = () => {
         </div>
       </div>
 
-      <div className="h-0.5 w-full bg-primary mt-40"></div>
+      <div className="h-0.5 w-full bg-primary mt-40 hidden md:block"></div>
     </div>
   );
 };
