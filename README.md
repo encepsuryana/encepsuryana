@@ -4,8 +4,8 @@
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=encepsuryana&label=Profile%20views&color=0e75b6&style=flat" alt="encepsuryana" /> </p>
 
 - 🌱 I’m currently expert in **Front-End Developer.**
-
 - 📫 How to reach me **encep.suryanajr@gmail.com**
+- 🌐 My portfolio <a href="encepsuryana.vercel.app">Encep Suryana - Portfolio</a>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
