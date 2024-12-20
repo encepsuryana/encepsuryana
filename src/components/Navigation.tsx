@@ -1,12 +1,12 @@
 "use client";
 
 import { FC, useState } from "react";
-import Link from "next/link";
 import {
   IoPaperPlaneOutline,
   IoMenuOutline,
   IoCloseOutline,
 } from "react-icons/io5";
+import { scrollPosition } from "@@/utils/positions";
 
 const Navigation: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,6 +14,16 @@ const Navigation: FC = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const menuList = [
+    { name: "Home", href: "home" },
+    { name: "About", href: "about" },
+    { name: "Works", href: "works" },
+    { name: "Services", href: "services" },
+    { name: "Testimonial", href: "testimonial" },
+    { name: "Blog", href: "blog" },
+    { name: "Contact", href: "contact" },
+  ];
 
   return (
     <nav className="sticky top-0 bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg shadow-md z-50 h-full">
@@ -42,27 +52,14 @@ const Navigation: FC = () => {
               <IoCloseOutline size={24} />
             </button>
           </li>
-          <li className="hover:text-primary hover:underline cursor-pointer">
-            <Link href="/">Home</Link>
-          </li>
-          <li className="hover:text-primary hover:underline cursor-pointer">
-            <Link href="#about">About</Link>
-          </li>
-          <li className="hover:text-primary hover:underline cursor-pointer">
-            <Link href="#works">Works</Link>
-          </li>
-          <li className="hover:text-primary hover:underline cursor-pointer">
-            <Link href="#services">Services</Link>
-          </li>
-          <li className="hover:text-primary hover:underline cursor-pointer">
-            <Link href="#testimonial">Testimonial</Link>
-          </li>
-          <li className="hover:text-primary hover:underline cursor-pointer">
-            <Link href="#blog">Blog</Link>
-          </li>
-          <li className="hover:text-primary hover:underline cursor-pointer">
-            <Link href="#contact">Contact</Link>
-          </li>
+          {menuList.map((menu) => (
+            <li
+              key={menu.name}
+              className="hover:text-primary hover:underline cursor-pointer"
+            >
+              <span onClick={() => scrollPosition(menu.href)}>{menu.name}</span>
+            </li>
+          ))}
           <li className="md:hidden">
             <button className="px-4 py-2 bg-primary text-black rounded-md hover:bg-opacity-80 hover:bg-transparent hover:text-primary transition-all border border-primary">
               <IoPaperPlaneOutline className="inline-block mr-2 -mt-1" />

@@ -1,17 +1,24 @@
+"use client";
+
+import { scrollPosition } from "@@/utils/positions";
 import Image from "next/image";
 import { FC } from "react";
 import { BsFillBriefcaseFill } from "react-icons/bs";
+import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 import { RiGlobeFill } from "react-icons/ri";
 
 const Hero: FC = () => {
   return (
-    <div className="container mx-auto px-7 md:px-0 my-2 md:my-40">
+    <div
+      className="container mx-auto px-7 md:px-0 h-screen flex flex-col justify-center"
+      id="home"
+    >
       <div className="flex flex-col-reverse md:flex-row items-center justify-center md:mt-20">
         <div className="md:mr-10 mt-8 md:mt-0 mb-8 md:mb-0">
           <Image
             src="https://github.com/encepsuryana.png"
             alt="Encep Suryana"
-            className="w-96 h-full rounded-full bg-primary"
+            className="w-60 md:w-96 h-full rounded-full bg-primary"
             width={384}
             height={384}
           />
@@ -35,7 +42,7 @@ const Hero: FC = () => {
             <h3 className="text-4xl font-bold">
               Hi👋, I&apos;m Encep Suryana, S.Kom.
             </h3>
-            <h1 className="text-6xl font-bold text-primary">
+            <h1 className="text-4xl md:text-6xl font-bold text-primary">
               Frontend Developer
             </h1>
             <p className="text-white mt-5">
@@ -47,7 +54,19 @@ const Hero: FC = () => {
         </div>
       </div>
 
-      <div className="h-0.5 w-full bg-primary mt-40 hidden md:block"></div>
+      <div
+        className="flex justify-center items-center md:mt-60"
+        onClick={() => scrollPosition("about")}
+      >
+        <div className="flex flex-col justify-center items-center">
+          <p className="text-white text-sm mb-8">
+            🚀 Let&apos;s explore my journey together!
+          </p>
+          <div className="flex flex-col justify-center items-center animate-bounce w-12 h-12 bg-primary rounded-full">
+            <MdOutlineKeyboardDoubleArrowDown className="text-black w-6 h-6 cursor-pointer" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
