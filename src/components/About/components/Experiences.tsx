@@ -3,7 +3,7 @@ import { experiences } from "../datas";
 
 const Experiences: FC = () => {
   return (
-    <div className="w-full flex justify-center items-center flex-col text-center mt-16">
+    <div className="w-full flex justify-center items-center flex-col text-center mt-6 md:mt-16">
       <span className="border border-white px-3 py-1 rounded-full text-primary text-sm font-semibold mb-4">
         My Experiences
       </span>
@@ -26,7 +26,7 @@ const Experiences: FC = () => {
                 {experience.projects.map((project) => (
                   <div
                     key={project.name}
-                    className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+                    className="bg-gray-800 p-3 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
                   >
                     {project.name && (
                       <h3 className="text-primary text-lg font-semibold mb-3">

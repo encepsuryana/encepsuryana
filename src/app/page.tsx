@@ -1,6 +1,11 @@
 import About from "@@/components/About";
+import Blog from "@@/components/Blogs";
+import Contact from "@@/components/Contact/Contact";
+import Footer from "@@/components/Footer";
 import Hero from "@@/components/Hero";
 import Navigation from "@@/components/Navigation";
+import Services from "@@/components/Services";
+import Works from "@@/components/Works";
 
 export default function Home() {
   return (
@@ -11,8 +16,12 @@ export default function Home() {
         <main className="row-start-2">
           <Hero />
           <About />
+          <Services />
+          <Works />
+          <Blog />
+          <Contact />
         </main>
-        <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
+        <Footer />
       </div>
     </div>
   );

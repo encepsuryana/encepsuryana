@@ -62,7 +62,7 @@ const Hero: FC = () => {
           <p className="text-white text-sm mb-8">
             🚀 Let&apos;s explore my journey together!
           </p>
-          <div className="flex flex-col justify-center items-center animate-bounce w-12 h-12 bg-primary rounded-full">
+          <div className="flex flex-col justify-center items-center animate-bounce w-8 md:w-12 h-8 md:h-12 bg-primary rounded-full">
             <MdOutlineKeyboardDoubleArrowDown className="text-black w-6 h-6 cursor-pointer" />
           </div>
         </div>

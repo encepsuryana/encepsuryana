@@ -18,9 +18,8 @@ const Navigation: FC = () => {
   const menuList = [
     { name: "Home", href: "home" },
     { name: "About", href: "about" },
-    { name: "Works", href: "works" },
     { name: "Services", href: "services" },
-    { name: "Testimonial", href: "testimonial" },
+    { name: "Works", href: "works" },
     { name: "Blog", href: "blog" },
     { name: "Contact", href: "contact" },
   ];
@@ -57,7 +56,14 @@ const Navigation: FC = () => {
               key={menu.name}
               className="hover:text-primary hover:underline cursor-pointer"
             >
-              <span onClick={() => scrollPosition(menu.href)}>{menu.name}</span>
+              <span
+                onClick={() => {
+                  scrollPosition(menu.href);
+                  toggleMenu();
+                }}
+              >
+                {menu.name}
+              </span>
             </li>
           ))}
           <li className="md:hidden">
