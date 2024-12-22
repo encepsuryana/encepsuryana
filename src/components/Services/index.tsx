@@ -1,9 +1,8 @@
 import { FC } from "react";
-import Works from "../Works";
 
 const Services: FC = () => {
   return (
-    <div className="bg-black py-16 md:py-32" id="works">
+    <section className="bg-black py-16 md:py-32" id="works">
       <div className="container mx-auto px-4 md:px-2">
         <div className="w-full flex justify-center items-center flex-col text-center">
           <span className="border border-white px-3 py-1 rounded-full text-primary text-sm font-semibold mb-4">
@@ -24,8 +23,8 @@ const Services: FC = () => {
         </div>
       </div>
 
-      <Works />
-    </div>
+      {/* <Works /> */}
+    </section>
   );
 };
 

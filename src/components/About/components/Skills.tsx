@@ -4,8 +4,8 @@ import Educations from "./Educations";
 
 const Skills: FC = () => {
   return (
-    <div className="container mx-auto px-4 md:px-2" id="skills">
-      <div className="py-16 md:py-32">
+    <section className="py-16 md:py-32" id="skills">
+      <div className="container mx-auto px-4 md:px-2">
         <div className="w-full flex justify-center items-center flex-col text-center mt-6 md:mt-16">
           <span className="border border-white px-3 py-1 rounded-full text-primary text-sm font-semibold mb-4">
             Skills Space
@@ -59,7 +59,7 @@ const Skills: FC = () => {
 
         <Educations />
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -9,7 +9,7 @@ import { RiGlobeFill } from "react-icons/ri";
 
 const Hero: FC = () => {
   return (
-    <div
+    <section
       className="container mx-auto px-7 md:px-0 h-screen flex flex-col justify-center"
       id="home"
     >
@@ -56,7 +56,7 @@ const Hero: FC = () => {
 
       <div
         className="flex justify-center items-center md:mt-60"
-        onClick={() => scrollPosition("about")}
+        onClick={() => scrollPosition("personal")}
       >
         <div className="flex flex-col justify-center items-center">
           <p className="text-white text-sm mb-8">
@@ -67,7 +67,7 @@ const Hero: FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

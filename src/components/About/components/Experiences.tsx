@@ -3,8 +3,8 @@ import { experiences } from "../datas";
 
 const Experiences: FC = () => {
   return (
-    <div className="container mx-auto px-4 md:px-2" id="experiences">
-      <div className="pt-16 md:pt-32">
+    <section className="pt-16 md:pt-32" id="experiences">
+      <div className="container mx-auto px-4 md:px-2">
         <div className="w-full flex justify-center items-center flex-col text-center mt-6 md:mt-16">
           <span className="border border-white px-3 py-1 rounded-full text-primary text-sm font-semibold mb-4">
             Experiences Space
@@ -84,7 +84,7 @@ const Experiences: FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

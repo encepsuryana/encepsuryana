@@ -1,6 +1,6 @@
 "use client";
 
-import { FC, useState } from "react";
+import { FC, useState, useEffect } from "react";
 import {
   IoPaperPlaneOutline,
   IoMenuOutline,
@@ -8,21 +8,50 @@ import {
 } from "react-icons/io5";
 import { scrollPosition } from "@@/utils/positions";
 
+const menuList = [
+  { name: "Home", href: "home" },
+  { name: "Personal", href: "personal" },
+  { name: "Experiences", href: "experiences" },
+  { name: "Skills", href: "skills" },
+  { name: "Portfolio", href: "works" },
+  { name: "Contact", href: "contact" },
+];
+
 const Navigation: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>("");
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  useEffect(() => {
+    const sections = menuList.map((menu) => document.getElementById(menu.href));
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+            console.info(`Active section: ${entry.target.id}`);
+          }
+        });
+      },
+      { threshold: 0.6 }
+    );
 
-  const menuList = [
-    { name: "Home", href: "home" },
-    { name: "Personal", href: "about" },
-    { name: "Experiences", href: "experiences" },
-    { name: "Skills", href: "skills" },
-    { name: "Works", href: "works" },
-    { name: "Contact", href: "contact" },
-  ];
+    sections.forEach((section) => {
+      if (section) {
+        observer.observe(section);
+      }
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        if (section) {
+          observer.unobserve(section);
+        }
+      });
+    };
+  }, []);
 
   return (
     <nav className="sticky top-0 bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg shadow-md z-50 h-full">
@@ -54,7 +83,9 @@ const Navigation: FC = () => {
           {menuList.map((menu) => (
             <li
               key={menu.name}
-              className="text-sm hover:text-primary hover:underline cursor-pointer"
+              className={`text-sm hover:text-primary hover:underline cursor-pointer ${
+                activeSection === menu.href ? "text-primary underline" : ""
+              }`}
             >
               <span
                 onClick={() => {
