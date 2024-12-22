@@ -31,22 +31,27 @@ export const personalInfo = {
         {
           name: "LinkedIn",
           link: "https://www.linkedin.com/in/encep-suryana-b60080113/",
-          icon: "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",
-        },
-        {
-          name: "GitHub",
-          link: "https://github.com/encepsuryana",
-          icon: "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+          icon: "https://icongr.am/fontawesome/linkedin.svg?size=128&color=ffffff",
         },
         {
           name: "Instagram",
           link: "https://www.instagram.com/encepsuryana_",
-          icon: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png",
+          icon: "https://icongr.am/fontawesome/instagram.svg?size=128&color=ffffff",
         },
         {
           name: "Facebook",
           link: "https://www.facebook.com/suryanamccarley",
-          icon: "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
+          icon: "https://icongr.am/fontawesome/facebook.svg?size=128&color=ffffff",
+        },
+        {
+          name: "GitHub",
+          link: "https://www.github.com/encepsuryana",
+          icon: "https://icongr.am/fontawesome/github.svg?size=128&color=ffffff",
+        },
+        {
+          name: "WhatsApp",
+          link: "https://wa.me/6282129714260",
+          icon: "https://icongr.am/fontawesome/whatsapp.svg?size=128&color=ffffff",
         },
       ],
     },
