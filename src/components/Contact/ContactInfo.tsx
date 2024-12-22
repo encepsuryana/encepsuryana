@@ -28,7 +28,7 @@ export const socialMedia = [
 ];
 const ContactInfo: FC = () => {
   return (
-    <div className="w-full md:w-1/2 text-left pr-8">
+    <div className="w-full md:max-w-4xl text-left pr-8">
       <h3 className="text-lg font-bold mt-8 mb-2">
         Let&apos;s be friends! Connect with me on{" "}
         <span className="text-primary font-bold">Social Media</span>

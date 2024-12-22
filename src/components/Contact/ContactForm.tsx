@@ -89,7 +89,7 @@ const ContactForm: FC = () => {
       <ToastContainer position="top-right" autoClose={5000} />
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="text-left w-full max-w-2xl"
+        className="text-left w-full"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {renderInputField(
