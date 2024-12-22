@@ -1,10 +1,14 @@
 import { FC } from "react";
+import Works from "../Works";
 
 const Services: FC = () => {
   return (
-    <div className="bg-black py-16 md:py-32" id="services">
-      <div className="container mx-auto px-4 md:px-0">
+    <div className="bg-black py-16 md:py-32" id="works">
+      <div className="container mx-auto px-4 md:px-2">
         <div className="w-full flex justify-center items-center flex-col text-center">
+          <span className="border border-white px-3 py-1 rounded-full text-primary text-sm font-semibold mb-4">
+            Works Space
+          </span>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
             My special <span className="text-primary font-bold">Services</span>
           </h1>
@@ -19,6 +23,8 @@ const Services: FC = () => {
           </p>
         </div>
       </div>
+
+      <Works />
     </div>
   );
 };

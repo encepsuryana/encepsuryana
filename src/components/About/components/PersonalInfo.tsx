@@ -3,12 +3,8 @@ import { personalInfo } from "../datas";
 
 const PersonalInfo: FC = () => {
   return (
-    <div className="w-full flex justify-center items-center flex-col text-center mt-6 md:mt-16">
-      <span className="border border-white px-3 py-1 rounded-full text-primary text-sm font-semibold mb-4">
-        {personalInfo.title}
-      </span>
-
-      <div className="text-white text-left max-w-4xl mt-4">
+    <div className="w-full flex justify-center items-center flex-col text-center">
+      <div className="text-white text-left max-w-4xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-8">
           {personalInfo.items.map((item) => (
             <div

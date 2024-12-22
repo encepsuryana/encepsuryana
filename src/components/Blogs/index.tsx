@@ -81,7 +81,7 @@ const Blog: FC = () => {
 
   return (
     <div className="bg-gray-900 py-16 md:py-32" id="blog">
-      <div className="container mx-auto px-4 md:px-0">
+      <div className="container mx-auto px-4 md:px-2">
         <div className="w-full flex justify-center items-center flex-col text-center mt-6 md:mt-16">
           <span className="border border-white px-3 py-1 rounded-full text-primary text-sm font-semibold mb-4">
             My Blogs

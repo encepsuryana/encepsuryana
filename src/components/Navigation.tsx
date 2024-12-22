@@ -17,10 +17,10 @@ const Navigation: FC = () => {
 
   const menuList = [
     { name: "Home", href: "home" },
-    { name: "About", href: "about" },
-    { name: "Services", href: "services" },
+    { name: "Personal", href: "about" },
+    { name: "Experiences", href: "experiences" },
+    { name: "Skills", href: "skills" },
     { name: "Works", href: "works" },
-    { name: "Blog", href: "blog" },
     { name: "Contact", href: "contact" },
   ];
 
@@ -54,7 +54,7 @@ const Navigation: FC = () => {
           {menuList.map((menu) => (
             <li
               key={menu.name}
-              className="hover:text-primary hover:underline cursor-pointer"
+              className="text-sm hover:text-primary hover:underline cursor-pointer"
             >
               <span
                 onClick={() => {
@@ -75,10 +75,15 @@ const Navigation: FC = () => {
         </ul>
 
         <div className="hidden md:block">
-          <button className="px-4 py-2 bg-primary text-black rounded-md hover:bg-opacity-80 hover:bg-transparent hover:text-primary transition-all border border-primary">
+          <a
+            href="mailto:encep.suryanajr@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+            className="px-4 py-2 bg-primary text-black rounded-md hover:bg-opacity-80 hover:bg-transparent hover:text-primary transition-all border border-primary"
+          >
             <IoPaperPlaneOutline className="inline-block mr-2 -mt-1" />
             Let&apos;s Talk
-          </button>
+          </a>
         </div>
       </div>
     </nav>

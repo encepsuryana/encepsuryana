@@ -10,11 +10,11 @@ export const personalInfo = {
     },
     {
       title: "Phone",
-      description: "+62 812-1234-5678",
+      description: "+62 821-2971-4260",
     },
     {
       title: "Location",
-      description: "Bandung, Indonesia",
+      description: "Sumedang, Indonesia",
     },
     {
       title: "Languages",
@@ -245,6 +245,15 @@ export const skills = [
     category: "Other Technologies & Expertise",
     subcategories: [
       {
+        name: "Content Management Systems (CMS)",
+        items: [
+          {
+            name: "WordPress Development",
+            icon: "https://upload.wikimedia.org/wikipedia/commons/2/20/WordPress_logo.svg",
+          },
+        ],
+      },
+      {
         name: "Development Tools",
         items: [
           {
@@ -362,6 +371,23 @@ export const experiences = [
           "Supervised by solution architect",
         ],
         technologies: ["React", "Angular", ".NET 6", "Node.js"],
+      },
+    ],
+  },
+  {
+    role: "Landing page & Wordpress Development (Freelance)",
+    company: "PT. Sanema Safari Mulia",
+    location: "Karawang, Indonesia (Remote Role)",
+    period: "09/2024 - 12/2024",
+    projects: [
+      {
+        name: "",
+        responsibilities: [
+          "Created landing page for Advertising and Marketing",
+          "Front‑end User Interface on Sanema tour website",
+          "Integrated Travel Booking System & Management",
+        ],
+        technologies: ["Wordpress", "PHP"],
       },
     ],
   },
@@ -514,6 +540,7 @@ export const educations = [
   {
     school: "Indonesia Computer University",
     location: "Bandung, Indonesia",
+    grade: "GPA: 3.13",
     period: "09/2014 - 02/2019",
     degree: "Informatic Engineering",
     description:

@@ -42,41 +42,35 @@ const Works: FC = () => {
   ];
 
   return (
-    <div className="bg-gray-900 py-16 md:py-32" id="works">
-      <div className="w-full flex justify-center items-center flex-col text-center mt-6 md:mt-16">
-        <span className="border border-white px-3 py-1 rounded-full text-primary text-sm font-semibold mb-4">
-          My Works
-        </span>
-
-        <div className="text-white text-left max-w-4xl">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {projectDone.map((project) => (
-              <div
-                key={project.title}
-                className="bg-gray-800 p-3 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow hover:bg-primary hover:bg-opacity-10 group"
+    <div className="w-full flex justify-center items-center flex-col text-center mt-6 md:mt-16">
+      <div className="text-white text-left max-w-4xl">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {projectDone.map((project) => (
+            <div
+              key={project.title}
+              className="bg-gray-800 p-3 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow hover:bg-primary hover:bg-opacity-10 group"
+            >
+              <h3 className="text-primary text-lg font-semibold mb-3 group-hover:text-gray-800">
+                {project.title}
+              </h3>
+              <p className="text-gray-400 text-sm font-semibold mb-4 group-hover:text-gray-800">
+                {project.description}
+              </p>
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-48 object-cover rounded-lg"
+              />
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+                className="text-primary text-sm font-semibold mt-2 group-hover:text-gray-800"
               >
-                <h3 className="text-primary text-lg font-semibold mb-3 group-hover:text-gray-800">
-                  {project.title}
-                </h3>
-                <p className="text-gray-400 text-sm font-semibold mb-4 group-hover:text-gray-800">
-                  {project.description}
-                </p>
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover rounded-lg"
-                />
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-primary text-sm font-semibold mt-2 group-hover:text-gray-800"
-                >
-                  View Project
-                </a>
-              </div>
-            ))}
-          </div>
+                View Project
+              </a>
+            </div>
+          ))}
         </div>
       </div>
     </div>
