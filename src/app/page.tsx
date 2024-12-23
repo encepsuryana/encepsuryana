@@ -1,5 +1,6 @@
 import Experiences from "@@/components/About/components/Experiences";
 import General from "@@/components/About/components/General";
+// import ResumePdf from "@@/components/About/components/ResumePdf";
 import Skills from "@@/components/About/components/Skills";
 import Contact from "@@/components/Contact";
 import Footer from "@@/components/Footer";
@@ -12,7 +13,9 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <Navigation />
 
-      <main className="row-start-2">
+      <main className="row-start-2" id="content-resume">
+        {/* <ResumePdf /> */}
+
         <Hero />
         <div className="bg-gray-900 py-16 md:py-32">
           <General />

@@ -23,7 +23,7 @@ export const personalInfo = {
     {
       title: "Address",
       description:
-        "Perum Griya Permata 2, A-8, Gunungmanik - Tanjungsari, Sumedang, West Java, Indonesia",
+        "Perum Griya Permata 2, Gunungmanik - Tanjungsari, Sumedang, West Java, Indonesia",
     },
     {
       title: "Social",
