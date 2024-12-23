@@ -9,8 +9,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Encep Suryana - Portfolio",
-  description: "Personal portfolio of Encep Suryana",
+  title: "Encep Suryana - Personal Resume",
+  description: "Personal resume of Encep Suryana",
+  viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({
