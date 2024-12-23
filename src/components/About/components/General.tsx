@@ -1,5 +1,6 @@
 import { FC } from "react";
 import PersonalInfo from "./PersonalInfo";
+import GenerateResumePDF from "./ResumePdf";
 
 const General: FC = () => {
   return (
@@ -43,6 +44,10 @@ const General: FC = () => {
       </div>
 
       <PersonalInfo />
+
+      <div className="mt-8 md:mt-16">
+        <GenerateResumePDF />
+      </div>
     </section>
   );
 };
