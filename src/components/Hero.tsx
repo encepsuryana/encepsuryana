@@ -46,7 +46,7 @@ const Hero: FC = () => {
               Frontend Developer
             </h1>
             <p className="text-white mt-5">
-              I&apos;m a frontend developer based in Indonesia with over 4 years
+              I&apos;m a frontend developer based in Indonesia with over 5 years
               of experience. I specialize in creating high-quality websites and
               web applications.
             </p>
