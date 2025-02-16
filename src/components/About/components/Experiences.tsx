@@ -22,65 +22,77 @@ const Experiences: FC = () => {
           </div>
 
           <div className="text-white text-left max-w-4xl">
-            {experiences.map((experience) => (
-              <div key={experience.role} className="mb-12">
-                <h2 className="text-primary text-xl font-bold mb-2">
-                  {experience.role}
-                </h2>
-                <h3 className="text-gray-400 text-md font-semibold mb-2">
-                  {experience.company}, {experience.location}
-                </h3>
-                <p className="text-gray-400 text-md font-semibold mb-4">
-                  {experience.period}
-                </p>
+            {Object.entries(experiences).map(
+              ([category, categoryExperiences]) => (
+                <div key={category} className="mb-16">
+                  <h2 className="text-primary text-2xl font-bold mb-6 capitalize">
+                    {category} Experiences
+                  </h2>
 
-                {experience.projects && (
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {experience.projects.map((project) => (
-                      <div
-                        key={project.name}
-                        className="bg-gray-800 p-3 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
-                      >
-                        {project.name && (
-                          <h3 className="text-primary text-lg font-semibold mb-3">
-                            {project.name}
-                          </h3>
-                        )}
+                  {categoryExperiences.map((experience) => (
+                    <div key={experience.role} className="mb-12">
+                      <h3 className="text-primary text-xl font-bold mb-2">
+                        {experience.role}
+                      </h3>
+                      <h4 className="text-gray-400 text-md font-semibold mb-2">
+                        {experience.company}, {experience.location}
+                      </h4>
+                      <p className="text-gray-400 text-md font-semibold mb-4">
+                        {experience.period}
+                      </p>
 
-                        <h4 className="text-gray-400 text-sm font-semibold mb-2">
-                          Responsibilities:
-                        </h4>
-                        <ul className="list-disc text-white text-sm md:text-base space-y-1 mb-4 pl-6">
-                          {project.responsibilities.map(
-                            (responsibility, index) => (
-                              <li key={index}>{responsibility}</li>
-                            )
-                          )}
-                        </ul>
+                      {experience.projects && (
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                          {experience.projects.map((project) => (
+                            <div
+                              key={project.name || Math.random()} // Adding fallback key if project name is not present
+                              className="bg-gray-800 p-3 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+                            >
+                              {project.name && (
+                                <h3 className="text-primary text-lg font-semibold mb-3">
+                                  {project.name}
+                                </h3>
+                              )}
 
-                        {project.technologies && (
-                          <>
-                            <h4 className="text-gray-400 text-sm font-semibold mb-2">
-                              Technologies:
-                            </h4>
-                            <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-                              {project.technologies.map((technology, index) => (
-                                <div
-                                  key={index}
-                                  className="bg-gray-700 hover:bg-primary p-2 rounded-md text-white hover:text-black text-xs md:text-sm text-center cursor-pointer flex items-center justify-center"
-                                >
-                                  {technology}
-                                </div>
-                              ))}
+                              <h4 className="text-gray-400 text-sm font-semibold mb-2">
+                                Responsibilities:
+                              </h4>
+                              <ul className="list-disc text-white text-sm md:text-base space-y-1 mb-4 pl-6">
+                                {project.responsibilities.map(
+                                  (responsibility, index) => (
+                                    <li key={index}>{responsibility}</li>
+                                  )
+                                )}
+                              </ul>
+
+                              {project.technologies && (
+                                <>
+                                  <h4 className="text-gray-400 text-sm font-semibold mb-2">
+                                    Technologies:
+                                  </h4>
+                                  <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+                                    {project.technologies.map(
+                                      (technology, index) => (
+                                        <div
+                                          key={index}
+                                          className="bg-gray-700 hover:bg-primary p-2 rounded-md text-white hover:text-black text-xs md:text-sm text-center cursor-pointer flex items-center justify-center"
+                                        >
+                                          {technology}
+                                        </div>
+                                      )
+                                    )}
+                                  </div>
+                                </>
+                              )}
                             </div>
-                          </>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              )
+            )}
           </div>
         </div>
       </div>

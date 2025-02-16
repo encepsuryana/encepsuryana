@@ -70,6 +70,10 @@ export const skills = [
             icon: "https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg",
           },
           {
+            name: "Next.js",
+            icon: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
+          },
+          {
             name: "Vue.js",
             icon: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg",
           },
@@ -77,15 +81,15 @@ export const skills = [
             name: "Angular",
             icon: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg",
           },
-          {
-            name: "Next.js",
-            icon: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
-          },
         ],
       },
       {
         name: "Styling",
         items: [
+          {
+            name: "Tailwind CSS",
+            icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1280px-Tailwind_CSS_Logo.svg.png",
+          },
           {
             name: "HTML",
             icon: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
@@ -98,11 +102,6 @@ export const skills = [
             name: "SASS",
             icon: "https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg",
           },
-          {
-            name: "Tailwind CSS",
-            icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1280px-Tailwind_CSS_Logo.svg.png",
-          },
-
           {
             name: "Bootstrap",
             icon: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg",
@@ -135,12 +134,16 @@ export const skills = [
         name: "Languages & Frameworks",
         items: [
           {
-            name: "Node.js",
-            icon: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
-          },
-          {
             name: "PHP",
             icon: "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
+          },
+          {
+            name: "Laravel",
+            icon: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg",
+          },
+          {
+            name: "Node.js",
+            icon: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
           },
           {
             name: "Kotlin",
@@ -313,233 +316,252 @@ export const skills = [
   },
 ];
 
-export const experiences = [
-  {
-    role: "System Analyst/Programmer",
-    company: "DevStack",
-    location: "Australia (Remote Role)",
-    period: "05/2022 - Present",
-    projects: [
-      {
-        name: "Travello/Backpackerdeals - Australia (current)",
-        responsibilities: [
-          "UI enhancements",
-          "Front‑end User Interface",
-          "Core Web Vitals and performance maintenance",
-          "SEO strategy",
-          "Integration of REST systems with Kotlin backend and PHP",
-          "Collaboration with solution architect",
-        ],
-        technologies: [
-          "TypeScript",
-          "Next.js",
-          "GraphQL",
-          "PHP",
-          "Google Cloud Console",
-          "New Relic",
-          "GTM",
-          "GA4",
-          "Kotlin (backend API)",
-          "Chart Helm",
-        ],
-      },
-      {
-        name: "MedScheme - Australia",
-        responsibilities: [
-          "Configured initial project structure and solution",
-          "Worked on Internal Tools with ReTools and Front‑End for Web FaceScan",
-          "Supervised by solution architect",
-        ],
-        technologies: ["ReTools", "JavaScript", "DynamoDB", "Rest API"],
-      },
-      {
-        name: "Longevum - Australia",
-        responsibilities: [
-          "Configured initial project structure and solution",
-          "Focused on Serverless Framework and user authentication",
-          "Supervised by solution architect",
-        ],
-        technologies: [
-          "Serverless Framework",
-          "Node.js",
-          "AWS Console",
-          "React Native",
-          "React.js",
-          "CakePHP",
-        ],
-      },
-      {
-        name: "DevHunt Career Site - Indonesia",
-        responsibilities: [
-          "Configured initial project structure and solution",
-          "Focused on NestJS and user authentication",
-          "Supervised by solution architect",
-        ],
-        technologies: ["React", "Angular", ".NET 6", "Node.js"],
-      },
-    ],
-  },
-  {
-    role: "Landing page & Wordpress Development (Freelance)",
-    company: "PT. Sanema Safari Mulia",
-    location: "Karawang, Indonesia (Remote Role)",
-    period: "09/2024 - 12/2024",
-    projects: [
-      {
-        name: "",
-        responsibilities: [
-          "Created landing page for Advertising and Marketing",
-          "Front‑end User Interface on Sanema tour website",
-          "Integrated Travel Booking System & Management",
-        ],
-        technologies: ["Wordpress", "PHP"],
-      },
-    ],
-  },
-  {
-    role: "Full Stack Developer (Freelance)",
-    company: "Jet Seeker Pty.Ltd",
-    location: "Sydney, Australia (Remote Role)",
-    period: "05/2023 - 07/2024",
-    projects: [
-      {
-        name: "",
-        responsibilities: [
-          "UI enhancements",
-          "Front‑end User Interface",
-          "Integrated Fatzebra payment gateway with 3ds secure for credit card integration",
-        ],
-        technologies: ["React.js", "PHP"],
-      },
-    ],
-  },
-  {
-    role: "Full Stack Developer Mobile Apps (Freelance)",
-    company: "Sport Center Taman Duta Mas",
-    location: "Jakarta, Indonesia (Remote Role)",
-    period: "05/2023 - 07/2023",
-    projects: [
-      {
-        name: "",
-        responsibilities: [
-          "Created wireframe and UI/UX design for mobile application",
-          "Developed mobile apps using React Native with auth login",
-          "Developed backend API using Laravel for real-time data and notification system",
-        ],
-        technologies: ["React Native", "Laravel"],
-      },
-    ],
-  },
-  {
-    role: "Instructor",
-    company: "PT. Babastudio",
-    location: "Jakarta, Indonesia (Remote Role)",
-    period: "10/2020 - 05/2022",
-    projects: [
-      {
-        name: "Programming Instructor",
-        responsibilities: [
-          "Programming instructor for HTML, CSS, JavaScript, React.js, React Native, Node.js, and Vue.js",
-        ],
-        technologies: [
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "React.js",
-          "React Native",
-          "Node.js",
-          "Vue.js",
-          "MongoDB",
-          "MySQL",
-          "Firebase",
-        ],
-      },
-      {
-        name: "Graphic Design Instructor",
-        responsibilities: [
-          "Graphic design instructor for Adobe Illustrator, Adobe Photoshop, and Figma",
-        ],
-        technologies: ["Adobe Illustrator", "Adobe Photoshop", "Figma"],
-      },
-      {
-        name: "Digital Marketing Instructor",
-        responsibilities: [
-          "Digital marketing instructor for SEO, SEM, and Social Media Marketing",
-        ],
-        technologies: ["SEO", "SEM", "Social Media Marketing"],
-      },
-      {
-        name: "Prakerja Instructor",
-        responsibilities: [
-          "Prakerja instructor in Digital Marketing, Programming, and Graphic Design",
-        ],
-        technologies: ["Digital Marketing", "Programming", "Graphic Design"],
-      },
-    ],
-  },
-  {
-    role: "HR - System Analyst and IT Support",
-    company: "CV Cipta Sinergi Manufacturing",
-    location: "Bandung, Indonesia",
-    period: "07/2019 - 10/2020",
-    projects: [
-      {
-        name: "Payroll and Overtime Calculation System",
-        responsibilities: [
-          "Developed and analyzed payroll and overtime calculation system using JavaScript",
-          "Integrated system with fingerprint attendance machine and ERP",
-        ],
-        technologies: ["JavaScript", "ERP system", "SQL"],
-      },
-      {
-        name: "Company Profile Website",
-        responsibilities: [
-          "Developed company profile website with CodeIgniter and implemented security measures",
-        ],
-        technologies: ["CodeIgniter", "SQL"],
-      },
-    ],
-  },
-  {
-    role: "Internship - Hadoop Big Data Architecture",
-    company: "PT. Citra Niaga Teknologi",
-    location: "Bandung, Indonesia",
-    period: "08/2017 - 11/2017",
-
-    projects: [
-      {
-        name: "Online Appointment System",
-        responsibilities: [
-          "Developed PHP‑based online appointment system using Laravel",
-          "Designed database schema and application architecture",
-        ],
-        technologies: ["PHP", "Laravel", "Hadoop", "Linux"],
-      },
-      {
-        name: "Data Analysis",
-        responsibilities: ["Installed Hadoop on Linux for data analysis"],
-        technologies: ["Hadoop", "Linux"],
-      },
-    ],
-  },
-  {
-    role: "Internship - Network Engineer",
-    company: "Padjadjaran University",
-    location: "Sumedang, Indonesia",
-    period: "04/2014 - 10/2014",
-    projects: [
-      {
-        name: "VoIP and Fiber Networks",
-        responsibilities: ["Installed VoIP and fiber networks"],
-        technologies: ["VoIP", "Fiber networks"],
-      },
-      {
-        name: "IT Technical Support",
-        responsibilities: ["Provided IT technical support"],
-      },
-    ],
-  },
-];
+export const experiences = {
+  fulltime: [
+    {
+      role: "Programmer Analyst",
+      company: "DevStack",
+      location: "Australia (Remote Role)",
+      period: "05/2022 - Present",
+      projects: [
+        {
+          name: "Travello/Backpackerdeals - Australia (current)",
+          responsibilities: [
+            "UI enhancements",
+            "Front‑end User Interface",
+            "Core Web Vitals and performance maintenance",
+            "SEO strategy",
+            "Integration of REST systems with Kotlin backend and PHP",
+            "Collaboration with solution architect",
+          ],
+          technologies: [
+            "TypeScript",
+            "Next.js",
+            "GraphQL",
+            "PHP Symfony",
+            "Google Cloud Console",
+            "New Relic",
+            "GTM",
+            "GA4",
+            "Kotlin (backend API)",
+            "Chart Helm",
+          ],
+        },
+        {
+          name: "MedScheme - Australia",
+          responsibilities: [
+            "Configured initial project structure and solution",
+            "Worked on Internal Tools with ReTools and Front‑End for Web FaceScan",
+            "Supervised by solution architect",
+          ],
+          technologies: ["ReTools", "JavaScript", "DynamoDB", "Rest API"],
+        },
+        {
+          name: "Longevum - Australia",
+          responsibilities: [
+            "Configured initial project structure and solution",
+            "Focused on Serverless Framework and user authentication",
+            "Supervised by solution architect",
+          ],
+          technologies: [
+            "Serverless Framework",
+            "Node.js",
+            "AWS Console",
+            "React Native",
+            "React.js",
+            "CakePHP",
+          ],
+        },
+        {
+          name: "DevHunt Career Site - Indonesia",
+          responsibilities: [
+            "Configured initial project structure and solution",
+            "Focused on NestJS and user authentication",
+            "Supervised by solution architect",
+          ],
+          technologies: ["React", "Angular", ".NET 6", "Node.js"],
+        },
+      ],
+    },
+    {
+      role: "Instructor",
+      company: "PT. Babastudio",
+      location: "Jakarta, Indonesia (Remote Role)",
+      period: "10/2020 - 05/2022",
+      projects: [
+        {
+          name: "Programming Instructor",
+          responsibilities: [
+            "Programming instructor for HTML, CSS, JavaScript, React.js, React Native, Node.js, and Vue.js",
+          ],
+          technologies: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React.js",
+            "React Native",
+            "Node.js",
+            "Vue.js",
+            "MongoDB",
+            "MySQL",
+            "Firebase",
+          ],
+        },
+        {
+          name: "Graphic Design Instructor",
+          responsibilities: [
+            "Graphic design instructor for Adobe Illustrator, Adobe Photoshop, and Figma",
+          ],
+          technologies: ["Adobe Illustrator", "Adobe Photoshop", "Figma"],
+        },
+        {
+          name: "Digital Marketing Instructor",
+          responsibilities: [
+            "Digital marketing instructor for SEO, SEM, and Social Media Marketing",
+          ],
+          technologies: ["SEO", "SEM", "Social Media Marketing"],
+        },
+        {
+          name: "Prakerja Instructor",
+          responsibilities: [
+            "Prakerja instructor in Digital Marketing, Programming, and Graphic Design",
+          ],
+          technologies: ["Digital Marketing", "Programming", "Graphic Design"],
+        },
+      ],
+    },
+    {
+      role: "HR - System Analyst and IT Support",
+      company: "CV Cipta Sinergi Manufacturing",
+      location: "Bandung, Indonesia",
+      period: "07/2019 - 10/2020",
+      projects: [
+        {
+          name: "Payroll and Overtime Calculation System",
+          responsibilities: [
+            "Developed and analyzed payroll and overtime calculation system using JavaScript",
+            "Integrated system with fingerprint attendance machine and ERP",
+          ],
+          technologies: ["JavaScript", "ERP system", "SQL"],
+        },
+        {
+          name: "Company Profile Website",
+          responsibilities: [
+            "Developed company profile website with CodeIgniter and implemented security measures",
+          ],
+          technologies: ["CodeIgniter", "SQL"],
+        },
+      ],
+    },
+    {
+      role: "Internship - Hadoop Big Data Architecture",
+      company: "PT. Citra Niaga Teknologi",
+      location: "Bandung, Indonesia",
+      period: "08/2017 - 11/2017",
+      projects: [
+        {
+          name: "Online Appointment System",
+          responsibilities: [
+            "Developed PHP‑based online appointment system using Laravel",
+            "Designed database schema and application architecture",
+          ],
+          technologies: ["PHP", "Laravel", "Hadoop", "Linux"],
+        },
+        {
+          name: "Data Analysis",
+          responsibilities: ["Installed Hadoop on Linux for data analysis"],
+          technologies: ["Hadoop", "Linux"],
+        },
+      ],
+    },
+    {
+      role: "Internship - Network Engineer",
+      company: "Padjadjaran University",
+      location: "Sumedang, Indonesia",
+      period: "04/2014 - 10/2014",
+      projects: [
+        {
+          name: "VoIP and Fiber Networks",
+          responsibilities: ["Installed VoIP and fiber networks"],
+          technologies: ["VoIP", "Fiber networks"],
+        },
+        {
+          name: "IT Technical Support",
+          responsibilities: ["Provided IT technical support"],
+        },
+      ],
+    },
+  ],
+  freelance: [
+    {
+      role: "Full Stack Developer - Stock & Water Management (Freelance)",
+      company: "TB. Berkah Jaya Abadi | Perum Griya Permata 2 Tanjungsari",
+      location: "Sumedang, Indonesia",
+      period: "01/2025 - 02/2025",
+      projects: [
+        {
+          name: "",
+          responsibilities: [
+            "Developed stock and water management system, with POS and inventory management & reporting system",
+            "Integrated system with IoT devices",
+          ],
+          technologies: ["React.js", "Laravel", "MySQL"],
+        },
+      ],
+    },
+    {
+      role: "Landing page & Wordpress Development (Freelance)",
+      company: "PT. Sanema Safari Mulia",
+      location: "Karawang, Indonesia (Remote Role)",
+      period: "09/2024 - 12/2024",
+      projects: [
+        {
+          name: "",
+          responsibilities: [
+            "Created landing page for Advertising and Marketing",
+            "Front‑end User Interface on Sanema tour website",
+            "Integrated Travel Booking System & Management",
+          ],
+          technologies: ["Wordpress", "PHP Native", "MySQL"],
+        },
+      ],
+    },
+    {
+      role: "Full Stack Developer (Freelance)",
+      company: "Jet Seeker Pty.Ltd",
+      location: "Sydney, Australia (Remote Role)",
+      period: "05/2023 - 07/2024",
+      projects: [
+        {
+          name: "",
+          responsibilities: [
+            "UI enhancements",
+            "Front‑end User Interface",
+            "Integrated Fatzebra payment gateway with 3ds secure for credit card integration",
+          ],
+          technologies: ["React.js", "PHP Symfony", "Google Cloud Console"],
+        },
+      ],
+    },
+    {
+      role: "Full Stack Developer Mobile Apps (Freelance)",
+      company: "Sport Center Taman Duta Mas",
+      location: "Jakarta, Indonesia (Remote Role)",
+      period: "05/2023 - 07/2023",
+      projects: [
+        {
+          name: "",
+          responsibilities: [
+            "Created wireframe and UI/UX design for mobile application",
+            "Developed mobile apps using React Native with auth login",
+            "Developed backend API using Laravel for real-time data and notification system",
+          ],
+          technologies: ["React Native", "Laravel"],
+        },
+      ],
+    },
+  ],
+};
 
 export const educations = [
   {
