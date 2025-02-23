@@ -22,36 +22,35 @@ export const personalInfo = {
     },
     {
       title: "Address",
-      description:
-        "Perum Griya Permata 2, Gunungmanik - Tanjungsari, Sumedang, West Java, Indonesia",
+      description: "Perum Griya Permata 2, Sumedang, West Java, Indonesia",
     },
     {
-      title: "Social",
+      title: "Socials",
       items: [
         {
           name: "LinkedIn",
           link: "https://www.linkedin.com/in/encep-suryana-b60080113/",
-          icon: "https://icongr.am/fontawesome/linkedin.svg?size=128&color=ffffff",
+          icon: "https://icongr.am/fontawesome/linkedin.svg?size=128&color=000000",
         },
         {
           name: "Instagram",
           link: "https://www.instagram.com/encepsuryana_",
-          icon: "https://icongr.am/fontawesome/instagram.svg?size=128&color=ffffff",
+          icon: "https://icongr.am/fontawesome/instagram.svg?size=128&color=000000",
         },
         {
           name: "Facebook",
           link: "https://www.facebook.com/suryanamccarley",
-          icon: "https://icongr.am/fontawesome/facebook.svg?size=128&color=ffffff",
+          icon: "https://icongr.am/fontawesome/facebook.svg?size=128&color=000000",
         },
         {
           name: "GitHub",
           link: "https://www.github.com/encepsuryana",
-          icon: "https://icongr.am/fontawesome/github.svg?size=128&color=ffffff",
+          icon: "https://icongr.am/fontawesome/github.svg?size=128&color=000000",
         },
         {
           name: "WhatsApp",
           link: "https://wa.me/6282129714260",
-          icon: "https://icongr.am/fontawesome/whatsapp.svg?size=128&color=ffffff",
+          icon: "https://icongr.am/fontawesome/whatsapp.svg?size=128&color=000000",
         },
       ],
     },

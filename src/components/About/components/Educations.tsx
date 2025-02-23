@@ -3,42 +3,42 @@ import { educations } from "../datas";
 
 const Educations: FC = () => {
   return (
-    <div className="w-full flex justify-center items-center flex-col text-center mt-6 md:mt-16">
-      <span className="border border-white px-3 py-1 rounded-full text-primary text-sm font-semibold mb-4">
-        Educations Space
-      </span>
+    <section
+      className="container mx-auto px-4 md:px-2 pt-16 md:pt-32"
+      id="educations"
+    >
+      <div className="w-full mt-6 md:mt-16">
+        <div className="mb-8 md:mb-12">
+          <div className="flex items-center justify-between border-b-2 border-dashed border-primary py-1 mb-4">
+            <h1 className="text-3xl md:text-4xl font-bold">
+              My <span className="text-primary font-bold">Educations</span>
+            </h1>
+            <div className="h-4 w-4 bg-primary rotate-6" />
+          </div>
 
-      <div className="mb-8 md:mb-12">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-          My <span className="text-primary font-bold">Educations</span>
-        </h1>
+          <p className="text-base md:text-lg leading-relaxed text-gray-600">
+            Explore the academic milestones that have significantly contributed
+            to my professional development.
+          </p>
+        </div>
 
-        <p className="text-white text-base md:text-lg leading-relaxed max-w-2xl">
-          Dive into my journey through various exciting educations that have
-          shaped my career!
-        </p>
-      </div>
-
-      <div className="text-white text-left max-w-4xl">
         {educations.map((edu) => (
-          <div
-            key={edu.school}
-            className="mb-8 bg-gray-800 p-3 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
-          >
-            <h2 className="text-primary text-lg font-bold mb-2">
+          <div key={edu.school} className="md:mb-8 px-2 md:px-4">
+            <h2 className="text-primary text-xl md:text-2xl font-bold mb-2">
               {edu.school} ({edu.location}):
             </h2>
-            <h3 className="text-gray-400 text-md font-semibold mb-2">
-              {edu.degree} / {edu.grade}
-            </h3>
-            <p className="text-gray-400 text-md font-semibold mb-2">
-              {edu.period}
-            </p>
-            <p className="text-white text-sm md:text-base">{edu.description}</p>
+            <div className="flex items-center justify-between gap-4">
+              <div className="text-sm md:text-md">
+                <span className="font-semibold">{edu.degree}</span> |{" "}
+                {edu.grade}/4
+              </div>
+              <p className="text-sm md:text-md text-right">{edu.period}</p>
+            </div>
+            <p className="text-md md:text-base">{edu.description}</p>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

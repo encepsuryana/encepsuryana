@@ -3,15 +3,26 @@
 @tailwind utilities;
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
-  --primary: #99de0e;
+  --background: #f4f4f9;
+  --foreground: #638c6d;
+  --bg-black: #0a0a0a;
+  --primary: #c84c05;
+  --secondary: #df6d2d;
 }
 
 body {
-  color: var(--foreground);
+  color: var(--bg-black);
   background: var(--background);
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-secondary);
 }
 
 ::-webkit-scrollbar {
@@ -39,4 +50,18 @@ body {
     scrollbar-face-color: var(--primary);
     scrollbar-track-color: var(--background);
   }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
 }

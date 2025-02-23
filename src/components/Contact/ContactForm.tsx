@@ -52,14 +52,14 @@ const ContactForm: FC = () => {
     error?: string
   ) => (
     <div className="mb-4">
-      <label className="block text-primary font-bold mb-2" htmlFor={id}>
+      <label className="block font-bold mb-2" htmlFor={id}>
         {label}
       </label>
       <input
         type={type}
         id={id}
         {...register(id as keyof ContactFormInputs)}
-        className={`w-full px-3 py-2 text-black border rounded-full focus:outline-none focus:ring-2 focus:ring-primary ${
+        className={`bg-transparent w-full px-3 py-2 border-b-2 border-dashed border-primary focus:outline-none focus:bg-white/10 ${
           error ? "border-red-500" : "border-gray-300"
         }`}
       />
@@ -69,14 +69,14 @@ const ContactForm: FC = () => {
 
   const renderTextareaField = (id: string, label: string, error?: string) => (
     <div className="mb-4">
-      <label className="block text-primary font-bold mb-2" htmlFor={id}>
+      <label className="block font-bold mb-2" htmlFor={id}>
         {label}
       </label>
       <textarea
         id={id}
         {...register(id as keyof ContactFormInputs)}
         rows={5}
-        className={`text-black w-full px-3 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary ${
+        className={`w-full px-3 py-2 border-b-2 border-dashed border-primary bg-transparent focus:outline-none focus:bg-white/10  ${
           error ? "border-red-500" : "border-gray-300"
         }`}
       ></textarea>
@@ -87,10 +87,7 @@ const ContactForm: FC = () => {
   return (
     <div className="w-full">
       <ToastContainer position="top-right" autoClose={5000} />
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        className="text-left w-full"
-      >
+      <form onSubmit={handleSubmit(onSubmit)} className="text-left w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {renderInputField(
             "first_name",
@@ -111,7 +108,7 @@ const ContactForm: FC = () => {
 
         <button
           type="submit"
-          className="w-full bg-primary text-black py-2 px-4 rounded-lg hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
+          className="w-full bg-primary py-2 px-4 hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
           disabled={isSubmitting}
         >
           {isSubmitting ? "Sending..." : "Send Message"}

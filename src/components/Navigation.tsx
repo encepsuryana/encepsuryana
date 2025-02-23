@@ -1,11 +1,7 @@
 "use client";
 
-import { FC, useState, useEffect } from "react";
-import {
-  IoPaperPlaneOutline,
-  IoMenuOutline,
-  IoCloseOutline,
-} from "react-icons/io5";
+import { FC, useState, useEffect, useRef, useCallback } from "react";
+import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 import { scrollPosition } from "@@/utils/positions";
 
 const menuList = [
@@ -13,55 +9,61 @@ const menuList = [
   { name: "Personal", href: "personal" },
   { name: "Experiences", href: "experiences" },
   { name: "Skills", href: "skills" },
-  { name: "Portfolio", href: "works" },
+  { name: "Educations", href: "educations" },
   { name: "Contact", href: "contact" },
 ];
 
 const Navigation: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState<string>("");
+  const [activeSection, setActiveSection] = useState<string>("home");
+  const observerRef = useRef<IntersectionObserver | null>(null);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleMenu = () => setIsOpen(!isOpen);
+
+  const handleIntersection = useCallback(
+    (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    },
+    []
+  );
+
   useEffect(() => {
+    if (observerRef.current) {
+      observerRef.current.disconnect();
+    }
+
+    observerRef.current = new IntersectionObserver(handleIntersection, {
+      threshold: 0.3,
+      rootMargin: "-10% 0px -50% 0px",
+    });
+
     const sections = menuList.map((menu) => document.getElementById(menu.href));
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-            console.info(`Active section: ${entry.target.id}`);
-          }
-        });
-      },
-      { threshold: 0.6 }
-    );
 
     sections.forEach((section) => {
-      if (section) {
-        observer.observe(section);
-      }
+      if (section) observerRef.current?.observe(section);
     });
 
     return () => {
       sections.forEach((section) => {
-        if (section) {
-          observer.unobserve(section);
-        }
+        if (section) observerRef.current?.unobserve(section);
       });
     };
-  }, []);
+  }, [handleIntersection]);
 
   return (
-    <nav className="sticky top-0 bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg shadow-md z-50 h-full">
+    <nav className="sticky top-0 bg-white/35 backdrop-filter backdrop-blur-lg z-50 h-full border-b border-black/10">
       <div className="container mx-auto flex justify-between items-center p-4">
         <div className="text-2xl font-bold">
-          Encep <span className="text-primary">Suryana</span>
+          <span className="bg-primary text-white px-2">Encep</span>
+          <span className="text-primary">Suryana</span>
         </div>
 
         <div className="md:hidden ml-auto">
-          <button onClick={toggleMenu} className="text-white">
+          <button onClick={toggleMenu} className="text-primary">
             {isOpen ? (
               <IoCloseOutline size={24} />
             ) : (
@@ -83,8 +85,10 @@ const Navigation: FC = () => {
           {menuList.map((menu) => (
             <li
               key={menu.name}
-              className={`text-sm hover:text-primary hover:underline cursor-pointer ${
-                activeSection === menu.href ? "text-primary underline" : ""
+              className={`text-sm hover:text-primary hover:bg-primary text-white md:text-black hover:text-white px-1 cursor-pointer ${
+                activeSection === menu.href
+                  ? "text-white md:text-white bg-primary"
+                  : ""
               }`}
             >
               <span
@@ -98,10 +102,14 @@ const Navigation: FC = () => {
             </li>
           ))}
           <li className="md:hidden">
-            <button className="px-4 py-2 bg-primary text-black rounded-md hover:bg-opacity-80 hover:bg-transparent hover:text-primary transition-all border border-primary">
-              <IoPaperPlaneOutline className="inline-block mr-2 -mt-1" />
+            <a
+              href="mailto:encep.suryanajr@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              className="px-4 py-2 bg-primary !text-white font-semibold text-secondary"
+            >
               Let&apos;s Talk
-            </button>
+            </a>
           </li>
         </ul>
 
@@ -110,9 +118,8 @@ const Navigation: FC = () => {
             href="mailto:encep.suryanajr@gmail.com"
             target="_blank"
             rel="noreferrer"
-            className="px-4 py-2 bg-primary text-black rounded-md hover:bg-opacity-80 hover:bg-transparent hover:text-primary transition-all border border-primary"
+            className="px-4 py-2 bg-primary !text-white font-semibold text-secondary"
           >
-            <IoPaperPlaneOutline className="inline-block mr-2 -mt-1" />
             Let&apos;s Talk
           </a>
         </div>

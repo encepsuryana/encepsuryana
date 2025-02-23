@@ -3,27 +3,27 @@ export const socialMedia = [
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/encep-suryana-b60080113/",
-    icon: "https://icongr.am/fontawesome/linkedin.svg?size=128&color=99de0e",
+    icon: "https://icongr.am/fontawesome/linkedin.svg?size=128&color=c84c05",
   },
   {
     name: "Instagram",
     href: "https://www.instagram.com/encepsuryana_",
-    icon: "https://icongr.am/fontawesome/instagram.svg?size=128&color=99de0e",
+    icon: "https://icongr.am/fontawesome/instagram.svg?size=128&color=c84c05",
   },
   {
     name: "Facebook",
     href: "https://www.facebook.com/suryanamccarley",
-    icon: "https://icongr.am/fontawesome/facebook.svg?size=128&color=99de0e",
+    icon: "https://icongr.am/fontawesome/facebook.svg?size=128&color=c84c05",
   },
   {
     name: "GitHub",
     href: "https://www.github.com/encepsuryana",
-    icon: "https://icongr.am/fontawesome/github.svg?size=128&color=99de0e",
+    icon: "https://icongr.am/fontawesome/github.svg?size=128&color=c84c05",
   },
   {
     name: "WhatsApp",
     href: "https://wa.me/6282129714260",
-    icon: "https://icongr.am/fontawesome/whatsapp.svg?size=128&color=99de0e",
+    icon: "https://icongr.am/fontawesome/whatsapp.svg?size=128&color=c84c05",
   },
 ];
 const ContactInfo: FC = () => {
@@ -33,8 +33,6 @@ const ContactInfo: FC = () => {
         Let&apos;s be friends! Connect with me on{" "}
         <span className="text-primary font-bold">Social Media</span>
       </h3>
-
-      <div className="h-1 w-20 bg-primary mb-4"></div>
 
       <div className="flex flex-wrap gap-4">
         {socialMedia.map((social) => (

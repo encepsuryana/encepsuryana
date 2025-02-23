@@ -5,19 +5,17 @@ import ContactInfo from "./ContactInfo";
 
 const Contact: FC = () => {
   return (
-    <section className="bg-gray-900 py-16 md:py-32" id="contact">
+    <section className="bg-gray-900 py-16 md:py-32 text-white" id="contact">
       <div className="container mx-auto px-4 md:px-2">
-        <div className="w-full flex justify-center items-center flex-col text-center">
-          <span className="border border-white px-3 py-1 rounded-full text-primary text-sm font-semibold mb-4">
-            Contact Space
-          </span>
-
+        <div className="w-full">
           <div className="mb-8 md:mb-12">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-              Get in <span className="text-primary font-bold">Touch</span>
-            </h1>
+            <div className="border-b-2 border-dashed border-primary py-1 mb-4">
+              <h1 className="text-3xl md:text-4xl font-bold">
+                Get in <span className="text-primary font-bold">Touch</span>
+              </h1>
+            </div>
 
-            <p className="text-white text-base md:text-lg leading-relaxed max-w-2xl">
+            <p className="text-white text-base md:text-lg leading-relaxed">
               Have a question or want to work together? Feel free to send me a
               message using the form below. I&apos;ll get back to you as soon as
               possible!
