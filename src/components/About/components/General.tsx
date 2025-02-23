@@ -24,7 +24,9 @@ const General: FC = () => {
                 Front End Developer
               </span>{" "}
               and{" "}
-              <span className="text-primary font-semibold">System Analyst</span>
+              <span className="text-primary font-semibold">
+                Analyst Programmer
+              </span>
               . I have expertise in{" "}
               <span className="text-primary font-semibold">
                 React, Node.js, PHP, AWS, Google Cloud, MySQL, MongoDB, and

@@ -319,7 +319,7 @@ export const skills = [
 export const experiences = {
   fulltime: [
     {
-      role: "Programmer Analyst",
+      role: "Analyst Programmer",
       company: "DevStack",
       location: "Australia (Remote Role)",
       period: "05/2022 - Present",

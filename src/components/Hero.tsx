@@ -40,15 +40,16 @@ const Hero: FC = () => {
 
           <div className="text-white mt-10">
             <h3 className="text-4xl font-bold">
-              Hi👋, I&apos;m Encep Suryana, S.Kom.
+              Hi there! 👋 I&apos;m Encep Suryana, S.Kom.
             </h3>
-            <h1 className="text-4xl md:text-6xl font-bold text-primary">
-              Frontend Developer
+            <h1 className="text-4xl md:text-5xl font-bold text-primary mt-4">
+              Analyst Programmer & Frontend Developer
             </h1>
             <p className="text-white mt-5">
-              I&apos;m a frontend developer based in Indonesia with over 5 years
-              of experience. I specialize in creating high-quality websites and
-              web applications.
+              Based in Indonesia, I bring over 5 years of experience as an
+              Analyst Programmer and Frontend Developer. I am passionate about
+              crafting high-quality websites and web applications that deliver
+              exceptional user experiences.
             </p>
           </div>
         </div>

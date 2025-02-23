@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
+    "encepsuryana": "file:",
     "jspdf": "^2.5.2",
     "next": "15.1.1",
     "nodemailer": "^6.9.16",
