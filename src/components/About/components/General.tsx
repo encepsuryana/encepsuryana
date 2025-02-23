@@ -12,7 +12,7 @@ const General: FC = () => {
           <div className="h-4 w-4 bg-primary rotate-6" />
         </div>
       </div>
-      <div className="w-full flex flex-col md:flex-row justify-center text-center md:text-left gap-8">
+      <div className="w-full flex flex-col md:flex-row justify-center text-left gap-8">
         <div className="md:w-1/2">
           <p className="text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
             Welcome to my personal space! My name is{" "}
