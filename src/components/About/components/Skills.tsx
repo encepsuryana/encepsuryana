@@ -17,8 +17,9 @@ const Skills: FC = () => {
           </div>
 
           <p className="text-base md:text-lg leading-relaxed">
-            Explore my diverse skill set. I am committed to continuous learning
-            and professional growth. Let&apos;s achieve excellence together.
+            Discover my comprehensive skill set, honed through dedication to
+            continuous improvement and professional development. Together, we
+            can achieve outstanding results.
           </p>
         </div>
 

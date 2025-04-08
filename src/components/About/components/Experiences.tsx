@@ -18,7 +18,9 @@ const Experiences: FC = () => {
 
           <p className="text-base md:text-lg leading-relaxed">
             Dive into my journey through various exciting roles and projects
-            that have shaped my career!
+            that have shaped my career! From innovative problem-solving to
+            impactful collaborations, explore the milestones that define my
+            professional growth.
           </p>
         </div>
 

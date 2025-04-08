@@ -16,9 +16,9 @@ const Educations: FC = () => {
             <div className="h-4 w-4 bg-primary rotate-6" />
           </div>
 
-          <p className="text-base md:text-lg leading-relaxed text-gray-600">
-            Explore the academic milestones that have significantly contributed
-            to my professional development.
+          <p className="text-base md:text-lg leading-relaxed">
+            Discover the key academic achievements that have shaped my expertise
+            and professional growth.
           </p>
         </div>
 

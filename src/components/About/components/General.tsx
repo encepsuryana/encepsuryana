@@ -15,25 +15,21 @@ const General: FC = () => {
       <div className="w-full flex flex-col md:flex-row justify-center text-left gap-8">
         <div className="md:w-1/2">
           <p className="text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
-            Welcome to my personal space! My name is{" "}
-            <span className="text-primary font-bold">Encep Suryana</span>, a
-            seasoned professional with over 5 years of experience as a{" "}
-            <span className="text-primary font-bold">Front End Developer</span>{" "}
+            Hello! I&apos;m{" "}
+            <span className="text-primary font-bold">Encep Suryana</span>, a{" "}
+            <span className="text-primary font-bold">Software Engineer</span>{" "}
             and{" "}
-            <span className="text-primary font-bold">Analyst Programmer</span>.
-            I specialize in{" "}
+            <span className="text-primary font-bold">Full Stack Developer</span>{" "}
+            specializing in{" "}
             <span className="text-primary font-bold">
-              React, Node.js, PHP, AWS, Google Cloud, MySQL, MongoDB, and
-              GraphQL
+              web and mobile applications
             </span>
-            . My proficiency extends to{" "}
+            . With over 5 years of experience, I excel in{" "}
             <span className="text-primary font-bold">
-              TypeScript, Next.js, and serverless architectures
+              React, Node.js, TypeScript, Java, Kotlin, and cloud technologies
             </span>
-            . I am passionate about frontend development and system analysis,
-            and I thrive on making complex problems simple and enjoyable to
-            solve. I am always eager to learn new technologies and continuously
-            improve my skills.
+            . Passionate about building scalable solutions, I continuously
+            strive to learn and grow.
           </p>
         </div>
         <div className="md:w-1/2 flex justify-start items-center flex-col text-center">

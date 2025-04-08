@@ -1,22 +1,30 @@
 "use client";
 import { scrollPosition } from "@@/utils/positions";
 import Image from "next/image";
-import { FC, useEffect, useState } from "react";
+import { FC, useEffect, useMemo, useState } from "react";
 
 const Hero: FC = () => {
-  const titles = [
-    "Frontend Developer",
-    "Analyst Programmer",
-    "Full Stack Developer",
-    "a Father",
-    "a Husband",
-    "a Friend",
-    "and a Human :D",
-  ];
-  const [displayText, setDisplayText] = useState("");
-  const [titleIndex, setTitleIndex] = useState(0);
-  const [charIndex, setCharIndex] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
+  const titles = useMemo(
+    () => [
+      "Full Stack Developer",
+      "Frontend Developer",
+      "Backend Developer",
+      "Software Engineer",
+      "Mobile App Developer",
+      "Analyst Programmer",
+      "a Father",
+      "a Husband",
+      "a Friend",
+      "a Team Player",
+      "and a Human :D",
+    ],
+    []
+  );
+
+  const [displayText, setDisplayText] = useState<string>("");
+  const [titleIndex, setTitleIndex] = useState<number>(0);
+  const [charIndex, setCharIndex] = useState<number>(0);
+  const [isDeleting, setIsDeleting] = useState<boolean>(false);
 
   useEffect(() => {
     const currentTitle = titles[titleIndex];
@@ -47,16 +55,16 @@ const Hero: FC = () => {
       <div className="flex flex-col-reverse md:flex-row items-center justify-between">
         <div className="mt-10 md:mt-0 md:w-1/2">
           <h1 className="text-3xl font-bold text-black">
-            Hi there! 👋 I&apos;m Encep Suryana, S.Kom.
+            Welcome! 👋 I&apos;m Encep Suryana, S.Kom.
           </h1>
           <h3 className="text-4xl md:text-5xl font-bold text-primary mt-4">
             {displayText}
             <span className="animate-blink">|</span>
           </h3>
           <p className="text-gray-800 mt-5">
-            Based in Indonesia, I bring over 5 years of experience in software
-            development. I am passionate about crafting high-quality websites
-            and web applications that deliver exceptional user experiences.
+            Passionate software developer from Indonesia, specializing in
+            crafting efficient web solutions and thriving in collaborative
+            remote environments.
           </p>
           <button
             className="mt-6 bg-primary text-white font-bold px-6 py-3 hover:bg-secondary transition"
