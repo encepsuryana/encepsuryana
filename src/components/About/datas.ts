@@ -10,7 +10,7 @@ export const personalInfo = {
     },
     {
       title: "Phone",
-      description: "+62 821-2971-4260",
+      description: "+62 821 2971 4260",
     },
     {
       title: "Location",
@@ -68,6 +68,11 @@ export const skills = [
             name: "React.js",
             icon: "https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg",
           },
+          {
+            name: "React Native",
+            icon: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+          },
+
           {
             name: "Next.js",
             icon: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
@@ -152,6 +157,10 @@ export const skills = [
             name: ".NET 6",
             icon: "https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg",
           },
+          {
+            name: "Java",
+            icon: "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
+          },
         ],
       },
       {
@@ -182,6 +191,10 @@ export const skills = [
           {
             name: "MySQL",
             icon: "https://upload.wikimedia.org/wikipedia/commons/0/0a/MySQL_textlogo.svg",
+          },
+          {
+            name: "PostgreSQL",
+            icon: "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg",
           },
         ],
       },
@@ -324,7 +337,7 @@ export const experiences = {
       period: "05/2022 - Present",
       projects: [
         {
-          name: "Travello/Backpackerdeals - Australia (current)",
+          name: "Travello/Backpackerdeals - Australia (11/2022 - Present)",
           responsibilities: [
             "UI enhancements",
             "Front‑end User Interface",
@@ -347,7 +360,7 @@ export const experiences = {
           ],
         },
         {
-          name: "MedScheme - Australia",
+          name: "MedScheme - Australia (09/2022 - 11/2022)",
           responsibilities: [
             "Configured initial project structure and solution",
             "Worked on Internal Tools with ReTools and Front‑End for Web FaceScan",
@@ -356,7 +369,7 @@ export const experiences = {
           technologies: ["ReTools", "JavaScript", "DynamoDB", "Rest API"],
         },
         {
-          name: "Longevum - Australia",
+          name: "Longevum - Australia (07/2022 - 09/2022)",
           responsibilities: [
             "Configured initial project structure and solution",
             "Focused on Serverless Framework and user authentication",
@@ -372,7 +385,7 @@ export const experiences = {
           ],
         },
         {
-          name: "DevHunt Career Site - Indonesia",
+          name: "DevHunt Career Site - Indonesia (05/2022 - 07/2022)",
           responsibilities: [
             "Configured initial project structure and solution",
             "Focused on NestJS and user authentication",
