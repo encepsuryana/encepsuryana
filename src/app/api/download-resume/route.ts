@@ -10,7 +10,7 @@ export function GET() {
   });
   const fileName = `${userName} - Resume ${monthYear}.pdf`;
 
-  const filePath = path.resolve("./public/file.pdf");
+  const filePath = path.resolve("./public/my_resume.pdf");
 
   if (fs.existsSync(filePath)) {
     const fileBuffer = fs.readFileSync(filePath);

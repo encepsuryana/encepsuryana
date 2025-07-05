@@ -506,6 +506,25 @@ export const experiences = {
   ],
   freelance: [
     {
+      role: "News Portal Development Mobile Apps (Freelance)",
+      company: "PT ARKADIA DIGITAL MEDIA TBK (Suara.com)",
+      location: "Jakarta, Indonesia",
+      period: "05/2025 - 07/2025",
+      projects: [
+        {
+          name: "",
+          responsibilities: [
+            "Developed a new mobile app using React Native for both Android and iOS, Integrated the analytic system into the mobile app, Collaborated with team members to ensure successful app development, Conducted testing and debugging to ensure app functionality, Maintained and updated the mobile app as needed",
+          ],
+          technologies: [
+            "React Native",
+            "Firebase",
+            "Redux",
+          ],
+        },
+      ],
+    },
+    {
       role: "Full Stack Developer - Stock & Water Management (Freelance)",
       company: "TB. Berkah Jaya Abadi | Perum Griya Permata 2 Tanjungsari",
       location: "Sumedang, Indonesia",
